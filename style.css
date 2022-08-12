@@ -3,8 +3,42 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+
+}
+
+
+#preloder{
+  height: 100%;
+  width:100%;
+  z-index: 100;
+  background: white;
+  background-size: 100%;
+  position: fixed;
+  text-align: center;
+  left: 0;
+  top: 0;
+  padding-top:15%;
+
+  }
+
+#img-loder{
+  border-style: solid;
+  border-width: thick;
+  border-color: pink;
+  border-radius: 10px;
+}
+
+@media (max-width:600px){
+#img-loder{
+  margin-top: 10%;
+}
+}
+
 .texto-barra{
 color:white;
+
 }
 
 .r1{
@@ -23,20 +57,14 @@ margin-top: 5%;
 .imagen-portada{
 border-style: solid;
 border-color: white;
-transition: opacity 4s;
+transition: opacity 2s;
 opacity: 0;
 display: block;
 border-radius: 350px/175px;
 
 }
 
-@media only screen and (min-width: 280px) and (max-width: 576px){
 
-.imagen-portada{
-
-}
-
-}
 
 
 @media only screen and (min-width: 280px) and (max-width: 576px){
@@ -62,21 +90,47 @@ text-align: center;
 font-size: 200%;
 }
 
+.flotante{
+    bottom: 0;
+    position:fixed;
+  z-index: 1;
+  font-size: 2.5rem;
+  display: inline-block;
+  width:30px;
+}
 
+
+
+
+}
 .linkEncabezado{
 text-decoration: none;
 }
+
+.navbar {
+  --bs-navbar-toggler-focus-width: 0.10rem;
+
+}
+
+
+.nav-link{
+  color:#D5D2C3;
+}
+
+
+
 
 
 .navbar-brand{
 font-family: 'Rochester', cursive;
 margin-left: 60px;
 font-size: 150%;
+color: white;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 576px){
   .navbar-brand{
-    font-size: 110%;
+    font-size: 130%;
     margin-left: 0px;
   }
 }
@@ -84,6 +138,7 @@ font-size: 150%;
 #navbarText{
 font-family: 'Rochester', cursive;
 font-size: 150%;
+color: white;
 }
 
 
@@ -92,6 +147,7 @@ font-size: 150%;
   font-family:'Square Peg', cursive;
   text-align: center;
   font-size: 100%;
+  color: white;
 }
 
 .texto-presentacion{
@@ -116,9 +172,7 @@ background-color: #F3E4E4;
 padding-bottom: 5%;
 }
 
-.imagen-lapicera{
-margin-top: -35%;
-}
+
 
 .r-idiomas{
 background-color: #F3E4E4;
@@ -127,7 +181,7 @@ border-width: 0px;
 }
 
 .divIdiomas{
-color:white;
+color:#F4F9E9;
 background-color: #1985A1;
 text-align: center;
 border-radius: 90px;
@@ -176,11 +230,7 @@ margin-bottom: 5%;
 }
 }
 
-.lapicera{
-margin-top: 5%;
-height: 5rem;
-width: 15rem;
-}
+
 
 .boton-frances{
 border-radius: 50px;
@@ -234,6 +284,7 @@ border-width: 2px;
 .barra-separadora{
 background-color: black;
 height: 60px;
+
 }
 
 .cardBio{
@@ -456,6 +507,8 @@ padding-bottom: 10%;
 background-image: url("imagenes/flores.png");
 }
 
+
+
 .cardcotiza{
   text-align: center;
   font-size: 1.3rem;
@@ -605,4 +658,44 @@ height: 60px;
 }
 .dario:hover{
 color:pink;
+}
+
+
+/* Buzz */
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count:infinite;
+  animation-iteration-count: infinite;
+  color: #25D366;
+
 }

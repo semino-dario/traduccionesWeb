@@ -1,3 +1,12 @@
+//////PRELODER/////////
+
+let preloder = document.querySelector("#preloder");
+
+window.addEventListener("load", function() {
+  preloder.style.display = "none"
+})
+
+
 /////////// BOTONES DE IDIOMAS DESACTIVADOS//////////////
 
 let botonFrances = document.querySelector(".boton-frances");
@@ -40,7 +49,7 @@ function mostrarScroll (){
                               if (alturaCotizacion -700 < scrollTop)
                               {
                                 cotizacion.style.opacity = 1;
-                                cotizacion.classList.add("mostrarDerecha")
+                                cotizacion.classList.add("mostrarArriba")
                               }
                               if (alturaContacto - 700 < scrollTop)
                               { contacto.style.opacity = 1;
@@ -52,7 +61,52 @@ function mostrarScroll (){
                             }
                           }
 
-function aparecer() {imagenPortada.style.opacity = 1}
+window.addEventListener("scroll", mostrarScroll)
+
+// TRANSICIÓN DE IMAGEN DE PORTADA//
+let botonWasap = document.querySelector(".linkWasap")
+
+function aparecer() {imagenPortada.style.opacity = 1
+}
+
 aparecer()
 
-window.addEventListener("scroll", mostrarScroll)
+// DETIENE EFECTO BUZZ EN ICONO DE WHATSAPP
+function detenerWasap(){botonWasap.classList.remove("hvr-buzz")}
+
+setTimeout(detenerWasap, 1500)
+
+
+//BARRA DE NAVEGACIÓN//
+
+let botonBarra = document.querySelector(".navbar-toggler")
+let barraCuadro = document.querySelector("#navbarText")
+let navbarBrand = document.querySelector(".navbar-brand")
+let span = document.querySelector("#span")
+let icon = document.querySelector("#icon")
+
+//Cambia ícono de la barra al clickear
+function cambiaBotonBarra(){
+if (span.textContent == "x"){
+  span.textContent = "+"
+}
+else {span.textContent = "x"}}
+
+botonBarra.addEventListener("click", cambiaBotonBarra)
+
+//Cierra Barra
+function cierraBarra(){
+$('.navbar-collapse').collapse('hide');
+span.textContent = "+"}
+
+//Cierra barra al clickear en sus elementos internos
+$('.navbar-nav>li>a').on('click', cierraBarra);
+
+//Cierra barra cuando se hace click fuera de ella
+document.addEventListener("mouseup", function(event) {
+    var obj = document.getElementById("barra");
+    if (!obj.contains(event.target)) {
+        cierraBarra()
+      }
+    }
+)

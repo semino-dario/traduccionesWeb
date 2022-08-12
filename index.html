@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TL - Traducciones Literarias" />
+    <meta property="og:description" content="Realizamos traducciones literarias y académicas de tesis, monografías, papers, ensayos, textos filosóficos, crónicas, novelas, cuentos, poesías…" />
+    <meta property="og:image" content="https://traduccionesliterarias.com/imagenes/maquina.jpg"/>
+    <meta property="og:image:secure_url" content="https://traduccionesliterarias.com/imagenes/maquina.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:alt" content="Máquina de escribir" />
+    <meta property="og:url" content="https://traduccionesliterarias.com/" />
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,29 +30,33 @@
 
 <body>
 
+  <div id="preloder">
+        <img id="img-loder" src="imagenes/preloder.gif" alt="en unos segundos..." height="200px" width="200px">
+      </div>
+
+
   <div class="container">
 
     <!-- Barra de Navegación-->
-    <div class="row rowbar">
-      <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-custom" id="barraInicio">
+    <div class="row rowbar" id="barra">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-custom"  id="barraInicio">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"> TL - Traducciones Literarias</a>
+          <a class="navbar-brand" href="https://traduccionesliterarias.com/"> TL - Traducciones Literarias</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <span id="span" class=>+</span> </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#barraTrabajos">Trabajos realizados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#barraQuienes">¿Quiénes somos?</a>
+                <a class="nav-link link2" aria-current="page" href="#barraQuienes">¿Quiénes somos?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#barraPresupuesto">Solicitar un presupuesto</a>
+                <a class="nav-link link3" aria-current="page" href="#barraPresupuesto">Solicitar un presupuesto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#barraContacto">Contacto</a>
+                <a class="nav-link link4" href="#barraContacto">Contacto</a>
               </li>
             </ul>
             <span class="navbar-text">
@@ -55,14 +70,14 @@
     <div class="row r1">
       <div class="col">
         <div class="portada">
-          <img src="imagenes/maquina.jpg" alt="" class="img-fluid imagen-portada">
+          <img src="imagenes/maquina.jpg" width="640px" height="435px" alt="máquina de escribir" class="img-fluid imagen-portada">
         </div>
       </div>
 
     </div>
 
-<!--Presentación-->
 
+<!--Presentación-->
 
   <div class="row r2">
     <div class="col">
@@ -73,22 +88,20 @@
         Nuestras trayectorias provienen de los ámbitos académico, docente, literario y editorial. Además de traducir también escribimos, leemos y enseñamos, por lo cual tenemos un contacto de primera mano con el tipo de materiales con los que trabajamos. Residimos en Argentina pero trabajamos y colaboramos con clientes y colegas de todas partes.<br><br>
         Ofrecemos una traducción de calidad, con un trato personalizado.</p><br>
         </div>
-      </div>
+        </div>
+      <span class="flotante">
+      <a target="_blank" class="linkWasap hvr-buzz" href="https://walink.co/e796f2"><i class="fa-brands fa-whatsapp"></i></a> </span>
+
     </div>
 
-  <div class="row r2">
-    <div class="col">
-      <div class="lapicera" >
-          <img src="imagenes/lapicera-h.png" class="imagen-lapicera img-fluid" width="100%" height="100%" alt="">
-        </div>
-      </div>
-    </div>
+
 
   <div class="row r2">
 
     <h5 class="tituloIdiomas">Idiomas con los que trabajamos</h5>
 
     <div class="col-sm-8 col-md-12 col-lg-12">
+
       <div class="card r2 r-idiomas ">
         <div class="card-body divIdiomas">
         <p class="card-text ">Trabajamos con traductores nativos o bilingües del idioma al que se traduce.</p>
@@ -104,7 +117,7 @@
       <div class="card r-idiomas">
         <div class="card-body">
         <button class="boton-frances boton-apretado">-Français-</button><br>
-        <img src="imagenes/flecha.png" alt=""><br>
+        <img src="imagenes/flecha.png" width="91px" height="92px" alt="boton"><br>
         <button type="button"  class="castellano1 boton-apretado">-Castellano-</button>
       </div>
     </div>
@@ -116,7 +129,8 @@
     <div class="card r-idiomas">
       <div class="card-body">
         <button type="button" class="boton-ingles">-English-</button><br>
-        <img src="imagenes/flecha-simple.png" alt=""><br>
+        <img src="imagenes/flecha-simple.png" width="91px" height="92px" alt="flecha"><br>
+        <div id="barraTrabajos"></div>
         <button type="button" class="castellano2 boton-apretado" name="button">-Castellano-</button>
       </div>
     </div>
@@ -126,7 +140,7 @@
 
 <!-- Trabajos -->
 
-    <div class="row barra-separadora" id="barraTrabajos">
+    <div class="row barra-separadora" >
     <div class="col">
     <h1 class="encabezado">Trabajos realizados</h1>
       </div>
@@ -183,6 +197,21 @@
             <p>Francés => Castellano</p>
           </div>
         </div>
+        <div class="carousel-item trabajos" data-bs-interval="10000">
+          <div class="d-block w-100">
+            <h2>- Narratives on teaching experience and its readjustment in times of a pandemic in Southern Argentina -</h2>
+            <p>- Paper traducido para publicar en Journal of Modern Education Review. -</p>
+            <p>Castellano => Inglés</p>
+          </div>
+        </div>
+        <div class="carousel-item trabajos" data-bs-interval="10000">
+          <div class="d-block w-100">
+            <h2>- El pensamiento económico y las instituciones en la Antigüedad y en la Edad Media -</h2>
+            <h5>Ekelund, E. & Hébert, R.</h5>
+            <p>- Material para seminario de grado "Los orígenes filosóficos de la economía antigua y moderna" (Filosofía, UBA). -</p>
+            <p>Inglés => Castellano</p>
+          </div>
+        </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
         <span class="carousel-control-prev-icon botonSlice" aria-hidden="true"></span>
@@ -209,7 +238,7 @@
   <div class="col-sm-12 col-md-6 col-lg-4">
     <div class="col-sm-12 col-md-2 col-lg-12 cardAcerca animado">
       <div class="">
-      <figure><img src="imagenes/lucila.jpeg" alt="" class="fotos"></figure>
+      <figure><img src="imagenes/lucila.jpeg" alt="lucila" class="fotos"></figure>
     </div>
     <h1 class=bio id=bioTit >Lucila Ojea </h1>
       <p class=bio>Soy licenciada y magister en Filosofía por la Universidad Paris 8 Vincennes Saint-Denis. Actualmente vivo en Buenos Aires, trabajo como docente y traductora fr>es y es>fr de textos académicos (artículos, resúmenes de tesis, ponencias, etc.). Participé en diversos proyectos editoriales de traducción vinculados a la Filosofía, la Educación y las Humanidades. Enseño francés en distintos espacios (Centro Universitario de Idiomas, Universidad de Belgrano, Escuela de Danzas Aída V. Mastrazzi, etc.) y también me desempeño como docente de Filosofía de la Educación en el Profesorado Pueblos de América.</p>
@@ -219,7 +248,7 @@
   <div class="col-sm-12 col-md-6 col-lg-4">      <!-- normal -->
     <div class="col-sm-12 col-md-2 col-lg-12 cardAcerca animado">
         <div class="">
-        <figure><img src="imagenes/gime.jpeg" alt="" class="fotos"></figure>
+        <figure><img src="imagenes/gime.jpeg" alt="Gimena" class="fotos"></figure>
       </div>
       <h1 class=bio id=bioTit>Gimena Mendoza </h1>
       <p class=bio>Soy Profesora de Filosofía (UBA), Diplomada en Constructivismo y Educación y Diplomada en Bioética (FLACSO). Asimismo, me encuentro finalizando una Especialización en traducción literaria en Inglés (UBA). Soy docente del taller de redacción académica ofrecido por el Departamento de Filosofía de la UBA y realizo traducciones de textos académicos y artículos especializados.</p>
@@ -232,7 +261,7 @@
     <div class="col-sm-12 col-md-6 col-lg-4">
       <div class="col-sm-12 col-md-2 col-lg-12 cardAcerca animado">
         <div class="">
-          <figure>  <img src="imagenes/dario.png" alt="" class="fotos"></figure>
+          <figure>  <img src="imagenes/dario.png" alt="Darío" class="fotos"></figure>
         </div>
         <h1 class=bio id=bioTit>Darío Semino </h1>
         <p class=bio>Escritor y editor. Me desempeñé siempre en actividades vinculadas con la escritura y el mundo de la cultura. Trabajé como librero en la librería La Libre de Buenos Aires, durante casi diez años. Publiqué libros de teatro, poesía y narrativa. Actualmente me dedico a realizar traducciones literarias del francés y a generar contenidos para páginas web. Además estoy dando mis primeros pasos como desarrollador web. Soy administrador y autor del sitio <a href="https://orbislibris.com/"target="_blank" class="linkOrbis"> orbislibris.com</a>, en el que comparto reseñas y artículos sobre libros de literatura, mitología y filosofía.</p>
@@ -244,7 +273,7 @@
 
   <div class="col-sm-12 col-md-6 col-lg-4">
     <div class="col-sm-12 col-lg-12 zoom cardAcerca animado">
-      <img src="imagenes/elise.png" alt="" class="fotos">
+      <img src="imagenes/elise.png" alt="Elise" class="fotos">
       <h1 class=bio id=bioTit>Elise Frixtalon</h1>
       <p class=bio>Francesa, resido en Argentina desde hace once años. Titulada de Letras en mi país, también me formé allá en filosofía política y periodismo. Desde hace varios años ya, ejerzo como profesora de francés y a la vez como traductora (del castellano hacia el francés), más especificamente en periodismo y psicoanálisis.</p>
       <div class="socialIcons">
@@ -255,7 +284,7 @@
 
   <div class="col-sm-12 col-md-6 col-lg-4">
     <div class="col-sm-12 col-lg-12 zoom cardAcerca animado">
-      <img src="imagenes/fer.png" alt="" class="fotos">
+      <img src="imagenes/fer.png" alt="Fernanda" class="fotos">
       <h1 class=bio id=bioTit>Fernanda Catullo</h1>
       <p class=bio>Estudié filosofía en la Facultad de Filosofía y Letras (UBA) y actualmente me encuentro escribiendo mi tesis de Licenciatura. Realicé una estancia de estudios en Sorbonne en el año 2016 tras haber estudiado francés en la Alianza Francesa de Buenos Aires durante 5 años. Llevé a cabo traducciones de artículos y libros del francés al castellano sobre temas filosóficos para diversas cátedras de la Facultad de Filosofía y Letras (UBA).</p>
     </div>
@@ -263,7 +292,7 @@
 
   <div class="col-sm-12 col-md-6 col-lg-4">
     <div class="col-sm-12 col-md-12 col-lg-12 flaubert">
-      <img src="imagenes/flaubert.png" alt="" width="80%" height="80%">
+      <img src="imagenes/flaubert.png" alt="Flaubert" width="80%" height="80%">
       <p class=bio id=flaubert>Y este es un Gustave Flaubert de la buena suerte</p>
     </div>
   </div>
@@ -272,7 +301,7 @@
 
 <!--Solicitar un presupuesto-->
 
-  <div class="row barra-separadora" id="barraPresupuesto">
+  <div class="row barra-separadora"id="barraPresupuesto" >
     <div class="col">
       <h1 class="encabezado">Solicitar un presupuesto</h1>
     </div>
@@ -280,19 +309,20 @@
 
 
 
+
 <div class="row r4">
 
   <div class="col-sm-12 col-lg-12 cardcotiza zoom">
     <p class=bio> Utilizamos como referencia los aranceles fijados por la Asociación Argentina de Traductores e Intérpretes (AATI). A partir de ese parámetro cada cotización varía según la complejidad del trabajo, la presencia de lenguaje técnico, la cantidad de palabras y el tiempo de entrega, entre otras variables.</p>
-    <p class=bio>Podés escribirnos para solicitar una cotización:<br> <a class="linkOrbis" href="mailto:traduccionesliterariascontacto@gmail.com"><i class="fa-solid fa-envelope"></i> E-mail</a><br> <a target="_blank" class="linkWasap" href="https://api.whatsapp.com/send?phone=541140871502&text=Hola,%20quer%C3%ADa%20consultar%20para%20realizar%20una%20traducci%C3%B3n"><i class="fa-brands fa-whatsapp"></i> WHATSAPP </a> <br> <br>
-      <img src="imagenes/calculadora.png" width="35%" height="35%" class="img-fluid" alt="">
+    <p class=bio>Podés escribirnos para solicitar una cotización:<br> <a class="linkOrbis" href="mailto:traduccionesliterariascontacto@gmail.com"><i class="fa-solid fa-envelope"></i> E-mail</a><br> <a target="_blank" class="linkWasap" href="https://walink.co/e796f2"><i class="fa-brands fa-whatsapp"></i> WHATSAPP </a> <br> <br>
+      <img src="imagenes/calculadora.png" width="35%" height="35%" class="img-fluid" alt="calculadora">
       <br>
       Podés consultar los aranceles orientativos de la Asociación Argentina de Traductores Literarios aquí:</p>
       <a href= "https://www.aati.org.ar/aranceles-orientativos"target="_blank" class="textoAati"><button type="button" name="button" class="aati">&nbspAATI&nbsp</button></a>
     </div>
 
 </div>
-
+</scroll-container>
 <!--Contacto-->
 
   <div class="row barra-separadora" id="barraContacto">
@@ -347,9 +377,8 @@
 </div>
 </div>
     <script type="text/javascript" src="jquery-3.6.0.js"></script>
-    <script type="text/javascript" src="traducciones.js"></script>
     <script type="text/javascript" src="bootstrap.js"> </script>
-
+    <script type="text/javascript" src="traducciones.js"></script>
     <script src="https://kit.fontawesome.com/59a4fd2baa.js" crossorigin="anonymous"></script>
   </body>
 </html>
