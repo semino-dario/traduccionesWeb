@@ -78,9 +78,6 @@ border-radius: 350px/175px;
 }
 
 
-.texto-barra:hover{
-  color: #AA6666;
-}
 
 .encabezado{
 margin-top: 1%;
@@ -150,6 +147,11 @@ color: white;
   color: white;
 }
 
+#cambiarIdioma:hover{
+  color:  #AA6666;
+}
+
+
 .texto-presentacion{
 
 font-family: 'EB Garamond', serif;
@@ -191,7 +193,7 @@ font-family:'EB Garamond', serif;
 font-size: 190%;
 border-style:solid;
 border-width: 1px;
-opacity: 0;
+opacity: 1;
 transition: opacity 1.5s;
 margin-bottom: 5%;
 padding: 3%;
@@ -317,11 +319,12 @@ text-align: center;
 .socialIcons{
 text-align: center;
 font-size: 130%;
-color: black;
+
+  color: black;
 }
 
 .socialIcons:hover{
-  color: #AA6666;
+color: #AA6666;;
 }
 
 .icon{
@@ -380,7 +383,7 @@ background-color: #FD2149;
 
 
 .cardAcerca{
-  opacity: 0;
+  opacity: 1;
   margin-top:5%;
   margin-bottom: 5%;
   background-color: #BAB098;
@@ -479,7 +482,7 @@ color: #4A2040;
 .flaubert{
   margin-top: 20%;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 3s;
 }
 
@@ -521,7 +524,7 @@ background-image: url("imagenes/flores.png");
   border-radius: 4px;
   border-width: 0.5px;
   font-family: 'EB Garamond', serif;
-  opacity: 0;
+  opacity: 1;
   transition: transform 0.5s, opacity 1s;
 }
 
@@ -570,7 +573,7 @@ background-image: url("imagenes/fondoverde.jpg");
 
 @media only screen and (min-width: 320px) and (max-width: 576px){
   .r5{
-    height: 18rem;
+    height: 20rem;
   }
 }
 .cardContacto{
@@ -580,13 +583,21 @@ font-family: 'EB Garamond', serif;
 margin-top: 5%;
 border: solid;
 border-width: 0.5px;
-opacity: 0;
-
+border-radius: 3px;
+opacity: 1;
 transition: transform 0.5s, opacity 1s;
 text-align: center;
+padding-left: 4px;
+padding-right: 4px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px){
+.texto-contacto{
+  font-size: 120%;
+  margin-bottom: 4px;
+}
+
+
+media only screen and (min-width: 380px) and (max-width: 576px){
   .cardContacto{
 padding-left: 2px;
 padding-right: 2px;
