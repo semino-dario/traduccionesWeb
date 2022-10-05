@@ -1,0 +1,83 @@
+.texto-barra{
+color:white;
+
+}
+
+.r1{
+padding-top: 5rem;
+background-color: #F3E4E4;
+}
+
+.bg-custom{
+  background-color: black;
+}
+
+.encabezado{
+margin-top: 1%;
+color: #AA6666;
+font-family: 'Rochester', cursive;
+text-align: center;
+font-size: 100%;
+}
+
+.linkEncabezado{
+text-decoration: none;
+}
+
+.navbar {
+  --bs-navbar-toggler-focus-width: 0.10rem;
+
+}
+
+
+.nav-link{
+  color:#D5D2C3;
+}
+
+
+
+
+
+.navbar-brand{
+font-family: 'Rochester', cursive;
+margin-left: 60px;
+font-size: 100%;
+color: white;
+}
+
+
+
+#navbarText{
+text-align: center;
+font-family: 'Rochester', cursive;
+font-size: 100%;
+color: white;
+margin-left: 30%;
+}
+
+
+
+#cambiarIdioma{
+  font-family:'Square Peg', cursive;
+  text-align: center;
+  font-size: 100%;
+  color: white;
+}
+
+#cambiarIdioma:hover{
+  color:  #AA6666;
+}
+
+@media (max-width: 990px){
+  #navbarText{
+    margin-left: initial;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 576px){
+  .navbar-brand{
+    font-size: 110%;
+    margin-left: 0px;
+  }
+
+}

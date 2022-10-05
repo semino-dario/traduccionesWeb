@@ -1,0 +1,326 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  color: #333333;
+  font: 1.4em/1.8 "EB Garamond", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F6F4F5;
+}
+
+@media (max-width: 37.5rem) {
+  body {
+    font-size: 1.2em;
+  }
+}
+
+h1 {
+  line-height: 1;
+  font-weight: 600;
+  font-style: italic;
+  opacity: 0.75;
+}
+
+article{
+  text-align: center;
+}
+
+.cabecera {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,166,200,1) 100%, rgba(0,212,255,1) 100%);  color: #fafafa;
+  color:#F4F9E9;
+  display: flex;
+  margin-top: 5%;
+}
+
+.cabecera__bloque1 {
+  height: 70vh;
+  width: 40%;
+  background-size: cover;
+}
+
+.imagen-portada{
+  object-fit: cover;
+  object-position: top;
+}
+
+.cabecera__bloque2 {
+  height: 70vh;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  text-align: center;
+  font-size: 80%;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+.articulo {
+  max-width: 40em;
+  margin: 5em auto;
+  padding: 0 3em;
+}
+
+
+.copete{
+  text-align: center;
+
+  padding:4%;
+  max-width: 45em;
+  margin: 3% auto;
+  margin-bottom: 5%;
+  font-size: 90%;
+  font-family: 'EB Garamond', serif;
+
+
+
+}
+
+.articulo{
+font: 1.4em/1.8 "EB Garamond", serif;
+max-width: 40em;
+margin:3em auto;
+padding:0 3em;
+font-size: 120%;
+text-align: justify;
+
+}
+
+.div-arabesco{
+  text-align: center;
+  margin-top: -7%;
+  margin-bottom: 10%;
+  transform: rotate(180deg);
+}
+
+.bio-autor{
+display: flex;
+border-radius: 10px;
+max-width: 45em;
+margin: 3% auto;
+padding-bottom: 0px;
+background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(0,183,221,1) 0%, rgba(0,144,174,1) 0%, rgba(0,1,4,1) 61%, rgba(6,42,50,1) 100%);
+color:#F4F9E9;
+
+}
+
+.foto-autor{
+width: 30%;
+background-size: cover;
+margin-left: 5%;
+}
+
+.texto-bio-autor{
+
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  font-size: 80%;
+  font-family: 'EB Garamond', serif;
+  text-align: justify;
+
+
+}
+
+.nota{
+  width: 40%;
+  font-size: 80%;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1%;
+  background-color:#F3E4E4;
+  display:none;
+  position:absolute;
+}
+
+#nota-2{
+  margin-top: -32%;
+}
+
+.div-boton-cierre{
+  text-align: center;
+  margin-top: -10px;
+}
+
+.cierra-nota{
+  cursor:pointer;
+  align-self: center;
+}
+
+.cierra-nota:hover{
+  width: 30px;
+  height: 30px;
+}
+
+.entrada{
+  cursor: pointer;
+  font-size: 100%;
+
+}
+
+.flecha{
+fill:red;
+}
+
+.flecha:hover{
+fill:black;
+}
+
+#warrens{
+  border-radius: 0px 10px 10px 0px;
+}
+.titulo-texto-bio{
+  font-family: 'Rochester', cursive;
+  text-align: left;
+  margin-bottom: 3%;
+}
+
+#warrens-rousseau{
+  border-radius: 10px;
+
+  padding: 5px;
+}
+
+.imagen-interior-texto{
+  width: 80%;
+  font-size: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 7%;
+  margin-bottom: 5%;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.sobre-la-traduccion{
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  max-width: 40em;
+  margin:3em auto;
+  padding:1em 3em;
+  text-align: justify;
+}
+
+
+@media (max-width: 950px){
+  #nota-3{
+    left: 5px;
+  }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 930px)
+{
+  .bio-autor{
+    max-height: 60vh;
+  }
+  .foto-autor{
+margin-top: 10%;
+  }
+  .texto-bio-autor{
+max-height: 55vh;
+  }
+
+
+}
+
+@media (max-width: 779px){
+  .bio-autor{
+    flex-direction: column;
+      align-items: center;
+
+  }
+
+.imagen-interior-texto{
+  width: 100%;
+  margin-left: initial;
+}
+
+.div-arabesco{
+  margin-top: -20%;
+  margin-bottom: 15%;
+}
+
+  #warrens{
+    border-radius: 10px;
+  }
+
+  .foto-autor{
+    width: 70%;
+    margin-bottom: 3%;
+  }
+
+
+  .texto-bio-autor{
+    width: 90%;
+    margin-left: -10px;
+
+  }
+
+.nota{
+  width: 85%;
+  padding: 3%;
+  font-size: 70%;
+}
+
+}
+
+@media (max-width: 325px){
+  .foto-autor{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+/* Correcciones para pantallas por debajo de 600px */
+
+@media (max-width: 37.5em) {
+  .cabecera {
+    flex-direction: column;
+  }
+
+
+
+  .cabecera__bloque1 {
+    width: 100%;
+    height: 50vh;
+
+  }
+
+  .cabecera__bloque2 {
+    width: 100%;
+    height: 40vh;
+    padding: 3em;
+    font-size: 80%;
+
+  }
+
+.articulo{
+
+padding: 10px;
+}
