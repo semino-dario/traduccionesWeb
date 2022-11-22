@@ -53,9 +53,10 @@ background-color: #F3E4E4;
 
 .slide-novedades{
   padding: 0px;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
+  padding-top: 5%;
   margin-top: 3%;
-  background-color: #F3E4E4;
+  background-color: #F3E4E4;;
 }
 
 
@@ -152,13 +153,6 @@ margin-left: initial;
   }
 }
 
-
-
-
-.arabesco{
-  margin-top: 5%;
-  margin-bottom: -7%;
-}
 
 .arabesco-2{
 transform: rotate(180deg);

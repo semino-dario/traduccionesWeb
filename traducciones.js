@@ -64,14 +64,13 @@ function mostrarScroll (){
 window.addEventListener("scroll", mostrarScroll)
 
 // TRANSICIÓN DE IMAGEN DE PORTADA//
-let botonWasap = document.querySelector(".linkWasap")
-
-function aparecer() {imagenPortada.style.opacity = 1
-}
+/*function aparecer() {imagenPortada.style.opacity = 1
+}*/
 
 //aparecer()
 
 // DETIENE EFECTO BUZZ EN ICONO DE WHATSAPP
+let botonWasap = document.querySelector(".linkWasap")
 function detenerWasap(){botonWasap.classList.remove("hvr-buzz")}
 
 setTimeout(detenerWasap, 1500)
